@@ -275,18 +275,16 @@ Chip8.prototype = {
 								this.pc += 2;
 							break;
 							case 0x0a:
-								var key = 0;
+								var key = false;
 								var i = 0;
 								while (!key && i < this.key.length) {
 									if (this.input.key === this.key[i]) {
-										key = i;
+										key = true;
+										this.v[nib2] = i;
+										this.pc += 2;
 									} else {
 										i++;
 									}
-								}
-								if (key !== 0) {
-									this.v[nib2] = key;
-									this.pc += 2;
 								}
 							break;
 						}
