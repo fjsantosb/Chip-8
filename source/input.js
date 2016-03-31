@@ -1,6 +1,5 @@
 /**
- * @author      Francisco Santos Belmonte <fjsantosb@gmail.com>
- * @copyright   2016
+ * @author  Francisco Santos Belmonte <fjsantosb@gmail.com>
  */
 
 Input = function () {
